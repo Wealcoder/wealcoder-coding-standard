@@ -1,0 +1,44 @@
+{
+	"name": "wealcoder/wealcoder-coding-standard",
+	"description": "A Wealcoder PHP_CodeSniffer standard that extends the official WordPress Coding Standards—customized for modern, secure, and consistent PHP development across all Wealcoder projects. Designed to enforce best practices and maintain high code quality in line with Wealcoder's engineering guidelines.",
+	"type": "phpcodesniffer-standard",
+	"license": "GPL-3.0-only",
+	"prefer-stable": true,
+	"authors": [
+		{
+			"name": "Wealcoder",
+			"email": "habib41juwel@gmail.com"
+		}
+	],
+	"keywords": [
+		"phpcs",
+		"standards",
+		"WordPress",
+		"code standard",
+		"Wealcoder",
+		"wealcoder coding standard",
+		"PHP Beautifier"
+	],
+	"require": {
+		"dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+		"phpcompatibility/phpcompatibility-wp": "^2.1.7",
+		"wp-coding-standards/wpcs": "^3.1.0"
+	},
+	"require-dev": {
+		"roave/security-advisories": "dev-latest"
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"\"vendor/bin/phpcs\" --config-set default_standard Wealcoder-Coding-Standard"
+		],
+		"post-update-cmd": [
+			"\"vendor/bin/phpcs\" --config-set default_standard Wealcoder-Coding-Standard"
+		],
+		"phpcs": "\"vendor/bin/phpcs\" . "
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	}
+}

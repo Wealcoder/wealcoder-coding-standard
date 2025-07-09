@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<ruleset name="Wealcoder-Coding-Standard">
+    <description>A Wealcoder PHP_CodeSniffer standard that extends the official WordPress Coding Standards—customized for modern, secure, and consistent PHP development across all Wealcoder projects. Designed to enforce best practices and maintain high code quality in line with Wealcoder's engineering guidelines.</description>
+
+    <!-- Configs -->
+    <config name="testVersion" value="7.0-" />
+
+</ruleset>
