@@ -2,7 +2,7 @@
 	"name": "wealcoder/wealcoder-coding-standard",
 	"description": "A Wealcoder PHP_CodeSniffer standard that extends the official WordPress Coding Standards—customized for modern, secure, and consistent PHP development across all Wealcoder projects. Designed to enforce best practices and maintain high code quality in line with Wealcoder's engineering guidelines.",
 	"type": "phpcodesniffer-standard",
-	"license": "GPL-3.0-only",
+	"license": "GPL-3.0-or-later",
 	"prefer-stable": true,
 	"authors": [
 		{
